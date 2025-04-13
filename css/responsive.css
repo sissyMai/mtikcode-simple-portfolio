@@ -31,6 +31,8 @@
         max-width: 1024px;
     }
 
+    /**** HEADER ******/
+
     #headerContainer {
         flex-direction: column;
     }
@@ -139,6 +141,10 @@
     section {
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+    header {
+        margin-top: 20px;
     }
 
     .container {

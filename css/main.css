@@ -71,8 +71,8 @@ section {
 /** ========= 
 	Header
 ===============*/
-header>div {
-	padding-top: 40px !important;
+header {
+	margin-top: 40px;
 }
 
 #headerContainer {
@@ -204,7 +204,7 @@ header>div {
 }
 
 #aboutMeBorder {
-	background-color: hsla(var(--p-700-code), 0.1);
+	background-color: hsla(var(--p-600-code), 0.1);
 	width: 70%;
 	padding: 48px;
 	border-radius: 48px;
@@ -225,7 +225,7 @@ header>div {
 	padding: 3rem 0rem;
 
 	& h1 {
-		color: var(--p-700);
+		color: var(--p-600);
 	}
 
 	& p {
@@ -250,28 +250,27 @@ header>div {
 		cursor: pointer;
 		text-align: center;
 		font-weight: 600;
-		box-shadow: 0 4px 6px -1px hsla(var(--p-950-code), 0.15), 0 2px 4px -2px hsla(var(--p-950-code), 0.15);
+		transition: all 0.3s ease;
+	}
+
+	& a:hover {
+		box-shadow: 0 4px 8px hsla(var(--p-950-code), 0.2), 0 2px 4px hsla(var(--p-950-code), 0.5);
 	}
 
 	& .primaryButton {
 		color: white;
-		background-color: var(--p-700);
-		transition: background-color 0.3s ease;
+		background-color: var(--p-600);
+		box-shadow: 0 3px 6px -1px hsla(var(--p-950-code), 0.2), 0 1px 2px hsla(var(--p-950-code), 0.5);
 
 		&:hover {
-			box-shadow: 0 8px 36px hsla(var(--p-700-code), 0.3);
+			background-color: var(--p-700);
 		}
 	}
 
 	& .outlineButton {
-		border: 1px solid var(--p-700);
-		color: var(--p-700);
+		border: 1px solid var(--p-600);
+		color: var(--p-600);
 		background-color: transparent;
-		transition: background-color 0.5s ease;
-
-		&:hover {
-			box-shadow: 0 6px 26px hsla(var(--p-700-code), 0.2);
-		}
 	}
 }
 
