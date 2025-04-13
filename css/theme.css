@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/******************
+     THEME 
+*******************/
+:root {
+  /*=============== 
+        COLORS 
+    =================*/
+  /* Primary colors */
+  --p-20: hsl(213, 100%, 98%);
+  --p-50: hsl(215, 100%, 97%);
+  --p-100: hsl(215, 100%, 94%);
+  --p-200: hsl(216, 93%, 89%);
+  --p-300: hsl(219, 91%, 82%);
+  --p-400: hsl(224, 86%, 74%);
+  --p-450: hsl(198, 81%, 63%);
+  --p-500: hsl(228, 81%, 63%);
+  --p-500-code: 228, 81%, 63%;
+  --p-600: hsl(233, 73%, 59%);
+  --p-700: hsl(234, 56%, 51%);
+  --p-700-code: 234, 56%, 51%;
+  --p-800: hsl(233, 53%, 41%);
+  --p-900: hsl(231, 46%, 34%);
+  --p-900-code: 231, 46%, 34%;
+  --p-950: hsl(233, 45%, 20%);
+  --p-950-code: 233, 45%, 20%;
+
+  /* Neutrals */
+  --n-50: hsl(210, 14%, 97%);
+  --n-500: hsl(215, 16%, 47%);
+  --n-600: hsl(215, 16%, 35%);
+  --foreground-color: hsl(0, 0%, 100%);
+
+  /* Gradients */
+  --main-gradient-color: linear-gradient(to right, var(--p-450), var(--p-500));
+  --gradient-color: linear-gradient(var(--foreground-color) 10%, var(--p-100));
+
+  /*================================= 
+        FONTS -  Sử dụng Scale 1.125
+    =================================*/
+  /* 32px */
+  --h1-font-size: 2rem;
+  /* 36px */
+  --h1-line-height: 2.25rem;
+
+  /* 26px */
+  --h2-font-size: 1.6rem;
+  /* 32px */
+  --h2-line-height: 2rem;
+
+  /* 20px */
+  --h3-font-size: 1.266rem;
+  /* 24px */
+  --h3-line-height: 1.5rem;
+
+  /* 18px */
+  --h4-font-size: 1.125rem;
+  /* 16px */
+  --h4-line-height: 1.5rem;
+
+  /* 16px */
+  --p-font-size: 1rem;
+  /* 24px */
+  --p-line-height: 1.5rem;
+
+  --p-letter-spacing: 0.025rem;
+
+  /* 12px */
+  --caption-font-size: 0.875rem;
+  /* 16px */
+  --caption-line-height: 1rem;
+}

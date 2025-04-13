@@ -1,0 +1,176 @@
+/** ===================================
+	Media Queries - Responsive Layout 
+=======================================*/
+
+/** ===================================
+	Desktop
+=======================================*/
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1028px;
+    }
+}
+
+/** ===================================
+	Tablet & Small Laptop
+=======================================*/
+
+@media (max-width: 1280px) {
+    section {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .container {
+        max-width: 1024px;
+    }
+
+    #headerContainer {
+        flex-direction: column;
+    }
+
+    #leftHeaderColumn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #leftHeaderTitles {
+        align-items: center;
+    }
+
+    #leftHeaderTitles p {
+        text-align: center;
+        max-width: 320px;
+    }
+
+    #rightHeaderColumn {
+        align-items: center
+    }
+
+    /**** ABOUT ME ******/
+
+    #aboutMeSection {
+        margin: 40px auto;
+    }
+
+    .softSkill-badge {
+        position: relative !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        right: auto !important;
+    }
+
+    .closedBookIcons {
+        display: none;
+    }
+
+    /*** PROJECTS ***/
+    #projectCardsContainer {
+        grid-template-columns: repeat(2, minmax(340px, auto));
+    }
+}
+
+/** ===================================
+	Small Tablet
+=======================================*/
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+
+
+    /**** ABOUT ME ******/
+    #aboutMeBorder {
+        padding: 8px;
+        width: 80%;
+    }
+
+    #aboutMeContainer {
+        background: white;
+    }
+
+    .CTA {
+        flex-direction: column;
+    }
+
+    #aboutMeSection img {
+        visibility: hidden;
+    }
+
+    /**** SKILLS ******/
+    #skillMainContent {
+        /* flex-direction: column; */
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        /* Single column */
+        grid-template-rows: minmax(280px, auto);
+        /* Adjust row height automatically */
+
+        & div.gridItem {
+            padding: 1rem 1rem;
+            grid-column: span 1 !important;
+            grid-row: span 1 !important;
+        }
+    }
+
+    .gridItem:nth-child(4) {
+        min-height: 280px;
+    }
+
+    /*** PROJECTS ***/
+    #projectCardsContainer {
+        grid-template-columns: repeat(1, minmax(320px, auto));
+    }
+}
+
+/** ===================================
+	Phone
+=======================================*/
+
+@media (max-width: 640px) {
+    section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .container {
+        max-width: 475px;
+    }
+
+    :root {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .container {
+        padding: 32px 16px;
+    }
+
+    #badgeWrapper {
+        flex-direction: column;
+    }
+
+    .sectionTitle {
+        /* font-size: 28px; */
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    #skillImg {
+        width: 100%;
+        height: auto;
+    }
+
+    #footerText {
+        padding: 0;
+    }
+}

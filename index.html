@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <title>My simple portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link
+      rel="icon"
+      href="./assets/rocket-icon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/responsive.css"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-----------
+      Header 
+    --------------->
+    <header>
+      <div class="container">
+        <div id="headerContainer">
+          <!-- left column -->
+          <div id="leftHeaderColumn">
+            <!-- use img as background so that we can do shadow -->
+            <div id="avarImgWrapper"></div>
+
+            <div id="leftHeaderTitles">
+              <h2 class="headerTitle">Mtikcode</h2>
+              <div id="badgeWrapper">
+                <div class="badge">
+                  Lập trình web, mobile app
+                </div>
+                <div class="badge">Fullstack developer</div>
+              </div>
+              <p>
+                Mong muốn ứng tuyển vị trí
+                <span>Junior Developer</span> trong lĩnh vực phát
+                triển web và mobile apps.
+              </p>
+            </div>
+          </div>
+
+          <!-- right column -->
+          <div id="rightHeaderColumn">
+            <h2 class="headerTitle">Thông Tin Liên Hệ</h2>
+            <p>
+              Gửi email cho mình tại:
+              <span>mtikcode@gmail.com</span>
+            </p>
+            <p>
+              Gọi cho mình tại:
+              <span>0897123434</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--------------
+      About Me
+    ------------------>
+    <section id="aboutMeSection">
+      <img
+        src="./assets/rocket-icon.svg"
+        alt="rocket icon"
+      />
+      <img
+        src="./assets/laptop-icon.svg"
+        alt="laptop icon"
+      />
+      <div id="aboutMeBorder">
+        <div id="aboutMeContainer">
+          <h1 class="sectionTitle">Giới Thiệu Bản Thân</h1>
+          <p class="sectionDescription">
+            Xin chào! Mình là sinh viên năm cuối trường đại học
+            CNTT. Mình có niềm đam mê với công việc lập trình và
+            vô cùng yêu thích việc tạo ra các trang web và mobile
+            app hiện đại và có tính ứng dụng cao.
+          </p>
+          <div class="CTA">
+            <a
+              href="/assets/CV_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="primaryButton"
+              download
+            >
+              Tải CV
+            </a>
+
+            <a
+              href="#ProjectContainer"
+              class="outlineButton"
+              >Xem Dự Án</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------
+     Skills 
+    ---------------->
+    <section id="skillSection">
+      <div class="container">
+        <div id="skillsContainer">
+          <div class="sectionHeader">
+            <h1 class="sectionTitle">Kỹ năng & Chuyên môn</h1>
+
+            <p class="sectionDescription">
+              Là một nhà phát triển web mới vào nghề, mình có nền
+              tảng vững chắc về các framework front-end như React
+              và thư viện NextJS, và có kinh nghiệm làm việc với
+              các công nghệ back-end như Node.js và Express.
+            </p>
+          </div>
+
+          <!---------
+           Grid Items 
+          ----------->
+          <div id="skillMainContent">
+            <div class="gridItem">
+              <!-- Grid Item 1 -->
+            </div>
+
+            <div class="gridItem">
+              <!-- Grid Item 2 -->
+              <div class="gridItemHeader">
+                <div>
+                  <img
+                    src="./assets/check-icon.svg"
+                    alt="check-icon"
+                  />
+                  <h2>Công cụ & Công nghệ</h2>
+                </div>
+                <p>
+                  Thành thạo nhiều công cụ lập trình web hiện
+                  đại, có kinh nghiệm xây dựng các ứng dụng web
+                  tương tác, thân thiện với người dùng và đam mê
+                  viết mã sạch, dễ bảo trì.
+                </p>
+              </div>
+
+              <!----------------
+               ICONS LIST START
+              ------------------>
+              <div>
+                <div class="icons-list-wrapper">
+                  <div class="icons-list">
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/C.svg"
+                        alt="C-ICON"
+                      />
+                      <span><p>C</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/github.svg"
+                        alt="GITHUB-ICON"
+                      />
+                      <span><p>GITHUB</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/css.svg"
+                        alt="CSS-ICON"
+                      />
+                      <span><p>CSS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/java.svg"
+                        alt="JAVA-ICON"
+                      />
+                      <span><p>JAVA</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/html.svg"
+                        alt="HTML-ICON"
+                      />
+                      <span><p>HTML</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/node-js.svg"
+                        alt="NODEJS-ICON"
+                      />
+                      <span><p>NODE JS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/JS.svg"
+                        alt="JS-ICON"
+                      />
+                      <span><p>JAVASCRIPT</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/react.svg"
+                        alt="REACT-ICON"
+                      />
+                      <span><p>REACT JS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/postgresql.svg"
+                        alt="POSTGRESQL-ICON"
+                      />
+                      <span><p>POSTGRESQL</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/nextjs.svg"
+                        alt="NextJs-ICON"
+                      />
+                      <span><p>NEXT JS</p></span>
+                    </div>
+                  </div>
+                  <div class="icons-list">
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/C.svg"
+                        alt="C-ICON"
+                      />
+                      <span><p>C</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/github.svg"
+                        alt="GITHUB-ICON"
+                      />
+                      <span><p>GITHUB</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/css.svg"
+                        alt="CSS-ICON"
+                      />
+                      <span><p>CSS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/java.svg"
+                        alt="JAVA-ICON"
+                      />
+                      <span><p>JAVA</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/html.svg"
+                        alt="HTML-ICON"
+                      />
+                      <span><p>HTML</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/node-js.svg"
+                        alt="NODEJS-ICON"
+                      />
+                      <span><p>NODE JS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/JS.svg"
+                        alt="JS-ICON"
+                      />
+                      <span><p>JAVASCRIPT</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/react.svg"
+                        alt="REACT-ICON"
+                      />
+                      <span><p>REACT JS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/postgresql.svg"
+                        alt="POSTGRESQL-ICON"
+                      />
+                      <span><p>POSTGRESQL</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/nextjs.svg"
+                        alt="NextJs-ICON"
+                      />
+                      <span><p>NEXT JS</p></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="icons-list-wrapper">
+                  <div class="icons-list">
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/C.svg"
+                        alt="C-ICON"
+                      />
+                      <span><p>C</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/github.svg"
+                        alt="GITHUB-ICON"
+                      />
+                      <span><p>GITHUB</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/css.svg"
+                        alt="CSS-ICON"
+                      />
+                      <span><p>CSS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/java.svg"
+                        alt="JAVA-ICON"
+                      />
+                      <span><p>JAVA</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/html.svg"
+                        alt="HTML-ICON"
+                      />
+                      <span><p>HTML</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/node-js.svg"
+                        alt="NODEJS-ICON"
+                      />
+                      <span><p>NODE JS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/JS.svg"
+                        alt="JS-ICON"
+                      />
+                      <span><p>JAVASCRIPT</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/react.svg"
+                        alt="REACT-ICON"
+                      />
+                      <span><p>REACT JS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/postgresql.svg"
+                        alt="POSTGRESQL-ICON"
+                      />
+                      <span><p>POSTGRESQL</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/nextjs.svg"
+                        alt="NextJs-ICON"
+                      />
+                      <span><p>NEXT JS</p></span>
+                    </div>
+                  </div>
+                  <div class="icons-list">
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/C.svg"
+                        alt="C-ICON"
+                      />
+                      <span><p>C</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/github.svg"
+                        alt="GITHUB-ICON"
+                      />
+                      <span><p>GITHUB</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/css.svg"
+                        alt="CSS-ICON"
+                      />
+                      <span><p>CSS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/java.svg"
+                        alt="JAVA-ICON"
+                      />
+                      <span><p>JAVA</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/html.svg"
+                        alt="HTML-ICON"
+                      />
+                      <span><p>HTML</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/node-js.svg"
+                        alt="NODEJS-ICON"
+                      />
+                      <span><p>NODE JS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/JS.svg"
+                        alt="JS-ICON"
+                      />
+                      <span><p>JAVASCRIPT</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/react.svg"
+                        alt="REACT-ICON"
+                      />
+                      <span><p>REACT JS</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/postgresql.svg"
+                        alt="POSTGRESQL-ICON"
+                      />
+                      <span><p>POSTGRESQL</p></span>
+                    </div>
+                    <div class="icon-badges">
+                      <img
+                        src="./assets/icons/nextjs.svg"
+                        alt="NextJs-ICON"
+                      />
+                      <span><p>NEXT JS</p></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!----------------
+               ICONS LIST END
+              ------------------>
+            </div>
+
+            <div class="gridItem">
+              <!-- Grid Item 3 -->
+              <div class="gridItemHeader">
+                <div>
+                  <img
+                    src="./assets/check-icon.svg"
+                    alt="check-icon"
+                  />
+                  <h2>Kỹ Năng Mềm</h2>
+                </div>
+                <p>
+                  Kỹ năng giao tiếp, cộng tác, và giải quyết vấn
+                  đề xuất sắc, với thái độ chủ động và ham học
+                  hỏi, dễ dàng thích nghi trong môi trường làm
+                  việc nhóm năng động.
+                </p>
+              </div>
+
+              <div id="softSkills">
+                <div class="softSkill-badge">
+                  <span>Giao tiếp chuyên nghiệp</span>
+                </div>
+                <div class="softSkill-badge">
+                  <span>Quản lý thời gian hiệu quả</span>
+                </div>
+                <div class="softSkill-badge">
+                  <span>Đáng tin cậy</span>
+                </div>
+                <div class="softSkill-badge">
+                  <span>Ham học hỏi</span>
+                </div>
+                <div class="closedBookIcons">
+                  <img
+                    src="./assets/closed-book.svg"
+                    alt="closed-book-icon"
+                  />
+                  <img
+                    src="./assets/closed-book.svg"
+                    alt="closed-book-icon"
+                  />
+                  <img
+                    src="./assets/closed-book.svg"
+                    alt="closed-book-icon"
+                  />
+                  <img
+                    src="./assets/closed-book.svg"
+                    alt="closed-book-icon"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="gridItem">
+              <!-- Grid Item 4 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------
+     Projects
+    ---------------->
+    <section id="projectSection">
+      <div class="container">
+        <div id="ProjectContainer">
+          <!-- header -->
+          <div class="sectionHeader">
+            <h1 class="sectionTitle">Đồ Án Thực Chiến</h1>
+            <p class="sectionDescription">
+              Bộ sưu tập dự án thực tập tại trường này giúp mình
+              củng cố và hoàn thiện những kỹ năng kỹ thuật cũng
+              như khả năng giải quyết vấn đề một cách sáng tạo.
+            </p>
+          </div>
+
+          <!-- cards -->
+          <div id="projectCardsContainer">
+            <a
+              href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projectCard">
+                <div class="projectCard-wrapper">
+                  <img
+                    class="projectCardImg"
+                    src="./assets/project1.jpg"
+                  />
+                </div>
+                <div class="projectCardTitles">
+                  <h4>dự án 1</h4>
+                  <h3>Todo List</h3>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projectCard">
+                <div class="projectCard-wrapper">
+                  <img
+                    class="projectCardImg"
+                    src="./assets/project2.jpg"
+                  />
+                </div>
+                <div class="projectCardTitles">
+                  <h4>dự án 2</h4>
+                  <h3>Trang thông tin công nghệ</h3>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projectCard">
+                <div class="projectCard-wrapper">
+                  <img
+                    class="projectCardImg"
+                    src="./assets/project3.jpg"
+                  />
+                </div>
+                <div class="projectCardTitles">
+                  <h4>dự án 3</h4>
+                  <h3>Spotify Clone</h3>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projectCard">
+                <div class="projectCard-wrapper">
+                  <img
+                    class="projectCardImg"
+                    src="./assets/project4.jpg"
+                  />
+                </div>
+                <div class="projectCardTitles">
+                  <h4>dự án 4</h4>
+                  <h3>Facebook Clone</h3>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projectCard">
+                <div class="projectCard-wrapper">
+                  <img
+                    class="projectCardImg"
+                    src="./assets/project5.jpg"
+                  />
+                </div>
+                <div class="projectCardTitles">
+                  <h4>dự án 5</h4>
+                  <h3>Thiết Kế Trang Doanh Nghiệp</h3>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="projectCard">
+                <div class="projectCard-wrapper">
+                  <img
+                    class="projectCardImg"
+                    src="./assets/project6.jpg"
+                  />
+                </div>
+                <div class="projectCardTitles">
+                  <h4>dự án 6</h4>
+                  <h3>Thiết Kế Web</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------
+     Footer
+    ---------------->
+    <footer id="footer">
+      <div class="container">
+        <p>© Mtikcode's Portfolio</p>
+      </div>
+    </footer>
+  </body>
+</html>
