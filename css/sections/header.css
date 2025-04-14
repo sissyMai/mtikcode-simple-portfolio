@@ -1,0 +1,93 @@
+/** ========= 
+	Header
+===============*/
+header {
+    margin-top: 40px;
+}
+
+.header__container {
+    display: flex;
+    gap: 40px;
+}
+
+.header__title {
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
+    font-weight: 600;
+}
+
+.header__column--left {
+    display: flex;
+    flex: 1;
+    gap: 24px;
+    align-items: center;
+
+    & .header__content--left {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    & .header__badge_container {
+        display: flex;
+        gap: 6px;
+        text-align: center;
+    }
+
+    & .badge {
+        font-size: var(--caption-font-size);
+        line-height: var(--caption-line-height);
+        color: var(--p-950);
+        padding: 4px 12px;
+        background-color: var(--p-50);
+        border-radius: 4px;
+        /* line-clamp */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+
+    & p {
+        color: var(--n-600);
+    }
+
+    & span {
+        font-weight: 600;
+        color: var(--p-950);
+    }
+}
+
+.header__column--right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: end;
+    gap: 8px;
+
+    & p {
+        color: var(--n-600);
+        text-align: center;
+    }
+
+    & span {
+        font-weight: 600;
+        color: var(--p-950);
+    }
+}
+
+.header__img {
+    border-radius: 100px;
+    width: 118px;
+    height: 118px;
+    box-shadow:
+        inset 0px -1px 1px hsla(0, 0%, 100%, 0.5),
+        0 4px 6px -1px hsla(0, 0%, 0%, 0.2),
+        0 2px 4px -2px hsla(0, 0%, 0%, 0.2),
+        inset 0px 1px 3px hsla(0, 0%, 0%, 0.1);
+    background-image: url('../../assets/avatar.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+}

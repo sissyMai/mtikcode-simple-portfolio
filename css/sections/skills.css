@@ -1,0 +1,242 @@
+/** =========== 
+	Skills
+===============*/
+.skills__section {
+    position: relative;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills__grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 320px);
+    gap: 12px;
+
+    & .skills__grid_item {
+        border: 2px solid var(--p-100);
+        border-radius: 24px;
+        background-color: var(--p-20);
+        padding: 2rem 2rem;
+        box-shadow: 0px 2px 4px hsla(233, 45%, 20%, 0.1);
+    }
+
+    & .skills__grid_item:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        border: none;
+        background-image: url('../../assets/cat1.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    & .skills__grid_item:nth-child(2) {
+        grid-column: 2 / 4;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & div.icons-list-wrapper {
+            overflow: hidden;
+            margin-top: 8px;
+            display: flex;
+            gap: 12px;
+        }
+
+        & div.icons-list {
+            display: flex;
+            min-width: 100%;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        & div.icons-list-wrapper:nth-child(1)>div.icons-list {
+            animation: move-left 30s linear infinite;
+        }
+
+        & div.icons-list-wrapper:nth-child(2)>div.icons-list {
+            transform: translateX(-100%);
+            animation: move-right 60s linear infinite;
+        }
+
+        & div.icon-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.14em;
+            border-radius: 12px;
+            padding: 0.6em 0;
+            font-weight: 700;
+            font-size: var(--caption-font-size);
+            width: 12em;
+        }
+
+        & div.icon-badges:nth-child(even) {
+            background: var(--main-gradient-color);
+            color: white;
+        }
+
+        & div.icon-badges:nth-child(odd) {
+            position: relative;
+            background: white;
+            z-index: 0;
+            margin: 1px;
+            border: 1px solid var(--p-100);
+        }
+
+        & div.icon-badges:nth-child(odd)>span {
+            background: var(--main-gradient-color);
+            color: transparent;
+            background-clip: text;
+        }
+
+        & div.icon-badges>img {
+            height: 2em;
+        }
+    }
+
+    & .skills__grid_item:nth-child(3) {
+        grid-column: 1/3;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & .softSkills__container {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        & .softSkills__badge {
+            width: 244px;
+            height: 36px;
+            border-radius: 24px;
+            border: 1px solid var(--p-100);
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: var(--caption-font-size);
+            font-weight: 600;
+            text-transform: capitalize;
+            position: absolute;
+        }
+
+        & .softSkills__badge span {
+            background: var(--main-gradient-color);
+            color: transparent;
+            background-clip: text;
+        }
+
+        & .softSkills__badge:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            transform: rotate(-2deg);
+        }
+
+        & .softSkills__badge:nth-child(2) {
+            bottom: 10%;
+            left: 20%;
+            transform: rotate(2deg);
+        }
+
+        & .softSkills__badge:nth-child(3) {
+            top: 25%;
+            right: 20%;
+            transform: rotate(-2deg);
+        }
+
+        & .softSkills__badge:nth-child(4) {
+            bottom: 10%;
+            right: 5%;
+            transform: rotate(2deg);
+        }
+
+        .softSkills__book_icons {
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            & img {
+                height: 40px;
+                width: 40px;
+                position: absolute;
+            }
+
+            & img:nth-child(1) {
+                top: 20px;
+                left: 50px;
+                transform: scaleX(-1);
+                transform: translateY(5px);
+
+            }
+
+            & img:nth-child(2) {
+                top: 40%;
+                left: 45%;
+                transform: rotate(120deg);
+
+            }
+
+            & img:nth-child(3) {
+                top: 10%;
+                right: 20%;
+
+            }
+
+            & img:nth-child(4) {
+                bottom: 20%;
+                right: 5%;
+                transform: scaleX(-1);
+                transform: rotate(-40deg);
+
+            }
+        }
+    }
+
+    & .skills__grid_item:nth-child(4) {
+        grid-column: 3/4;
+        grid-row: 2;
+        border: none;
+        background-image: url('../../assets/cat3.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:hover {
+            background-image: url('../../assets/cat2.jpeg');
+        }
+    }
+}
+
+.skills__grid_item_header p {
+    margin-top: 12px;
+    color: var(--n-500);
+    max-width: 60ch;
+}
+
+.skills__grid_item_header>div {
+    display: flex;
+    gap: 12px;
+
+    & h2 {
+        font-size: var(--h2-font-size);
+        line-height: var(--h2-line-height);
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+}

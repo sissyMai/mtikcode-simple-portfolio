@@ -1,0 +1,106 @@
+/** =========== 
+	About Me
+=============== */
+
+.aboutMe__section {
+    position: relative;
+    overflow-y: visible;
+    margin: 140px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1660px;
+
+    & img {
+        position: absolute;
+        z-index: -10;
+        width: 300px;
+        height: auto;
+    }
+
+    & img:first-child {
+        top: -20%;
+        left: 1%;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    & img:nth-child(2) {
+        bottom: -20%;
+        right: 0;
+        z-index: 1;
+        animation: float 7s 1s ease-in-out infinite;
+    }
+
+}
+
+.aboutMe__container {
+    background-color: hsla(var(--p-600-code), 0.1);
+    width: 70%;
+    padding: 48px;
+    border-radius: 48px;
+}
+
+.aboutMe__content_container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 48px;
+    padding: 3rem 0rem;
+
+    & h1 {
+        color: var(--p-600);
+    }
+
+    & p {
+        color: var(--n-600);
+        padding: 0px 1rem;
+    }
+}
+
+.CTA {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+
+    & a {
+        padding: 12px 12px;
+        width: 240px;
+        max-width: 80%;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+}
+
+.primaryButton {
+    color: white;
+    background-color: var(--p-600);
+    box-shadow: 0 3px 6px -1px hsla(var(--p-950-code), 0.2), 0 1px 2px hsla(var(--p-950-code), 0.5);
+
+    &:hover {
+        background-color: var(--p-700);
+        box-shadow: 0 4px 8px hsla(var(--p-700-code), 0.2), 0 2px 4px hsla(var(--p-700-code), 0.3), 0 1px 2px hsla(var(--p-700-code), 0.5);
+    }
+}
+
+.outlineButton {
+    border: 1px solid var(--p-600);
+    color: var(--p-600);
+    background-color: transparent;
+
+    &:hover {
+        box-shadow: 0 4px 8px hsla(var(--p-700-code), 0.1), 0 2px 4px hsla(var(--p-700-code), 0.3);
+    }
+}

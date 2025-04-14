@@ -33,35 +33,37 @@
 
     /**** HEADER ******/
 
-    #headerContainer {
+    .header__container {
         flex-direction: column;
     }
 
-    #leftHeaderColumn {
+    .header__column--left {
         flex-direction: column;
         align-items: center;
     }
 
-    #leftHeaderTitles {
+    .header__content--left {
         align-items: center;
     }
 
-    #leftHeaderTitles p {
+    .header__content--left p {
         text-align: center;
         max-width: 320px;
     }
 
-    #rightHeaderColumn {
+    .header__column--right {
         align-items: center
     }
 
     /**** ABOUT ME ******/
 
-    #aboutMeSection {
+    .aboutMe__section {
         margin: 40px auto;
     }
 
-    .softSkill-badge {
+    /**** SKILLS ******/
+
+    .softSkills__badge {
         position: relative !important;
         transform: none !important;
         left: auto !important;
@@ -70,12 +72,12 @@
         right: auto !important;
     }
 
-    .closedBookIcons {
+    .softSkills__book_icons {
         display: none;
     }
 
     /*** PROJECTS ***/
-    #projectCardsContainer {
+    .projects__cards_container {
         grid-template-columns: repeat(2, minmax(340px, auto));
     }
 }
@@ -91,12 +93,12 @@
 
 
     /**** ABOUT ME ******/
-    #aboutMeBorder {
+    .aboutMe__container {
         padding: 8px;
         width: 80%;
     }
 
-    #aboutMeContainer {
+    .aboutMe__content_container {
         background: white;
     }
 
@@ -104,31 +106,28 @@
         flex-direction: column;
     }
 
-    #aboutMeSection img {
+    .aboutMe__section img {
         visibility: hidden;
     }
 
     /**** SKILLS ******/
-    #skillMainContent {
-        /* flex-direction: column; */
+    .skills__grid_container {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
-        /* Single column */
         grid-template-rows: minmax(280px, auto);
-        /* Adjust row height automatically */
 
-        & div.gridItem {
+        & .skills__grid_item {
             padding: 1rem 1rem;
             grid-column: span 1 !important;
             grid-row: span 1 !important;
         }
     }
 
-    .gridItem:nth-child(4) {
+    .skills__grid_item:nth-child(4) {
         min-height: 280px;
     }
 
     /*** PROJECTS ***/
-    #projectCardsContainer {
+    .projects__cards_container {
         grid-template-columns: repeat(1, minmax(320px, auto));
     }
 }
@@ -138,6 +137,11 @@
 =======================================*/
 
 @media (max-width: 640px) {
+    :root {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
     section {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -149,34 +153,24 @@
 
     .container {
         max-width: 475px;
-    }
-
-    :root {
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-    .container {
         padding: 32px 16px;
     }
 
-    #badgeWrapper {
-        flex-direction: column;
-    }
-
-    .sectionTitle {
+    .section__title {
         /* font-size: 28px; */
         font-size: 2rem;
         line-height: 2rem;
         text-align: center;
     }
 
-    #skillImg {
-        width: 100%;
-        height: auto;
+    /**** HEADER ******/
+
+    .header__badge_container {
+        flex-direction: column;
     }
 
-    #footerText {
+    /**** FOOTER ******/
+    footer {
         padding: 0;
     }
 }
