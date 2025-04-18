@@ -1,10 +1,6 @@
 /** =========== 
 	Skills
 ===============*/
-.skills__section {
-    position: relative;
-}
-
 .skills__container {
     display: flex;
     flex-direction: column;
