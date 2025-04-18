@@ -17,7 +17,7 @@
 .projects__cards_container {
     display: grid;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(auto, 340px));
     grid-gap: 32px;
     justify-content: center;
