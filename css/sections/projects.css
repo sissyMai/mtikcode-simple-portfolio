@@ -16,9 +16,12 @@
 
 .projects__cards_container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(340px, auto));
+    margin: 0 auto;
+    max-width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 340px));
     grid-gap: 32px;
     justify-content: center;
+    align-content: center;
 
     & .projects__cards_wrapper {
         background: hsla(var(--p-700-code), 0.1);

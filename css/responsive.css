@@ -70,11 +70,6 @@
     .softSkills__book_icons {
         display: none;
     }
-
-    /*** PROJECTS ***/
-    .projects__cards_container {
-        grid-template-columns: repeat(2, minmax(340px, auto));
-    }
 }
 
 /** ===================================
@@ -105,11 +100,6 @@
             grid-column: span 1 !important;
             grid-row: span 1 !important;
         }
-    }
-
-    /*** PROJECTS ***/
-    .projects__cards_container {
-        grid-template-columns: repeat(1, minmax(320px, auto));
     }
 }
 
