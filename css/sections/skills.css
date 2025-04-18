@@ -15,19 +15,39 @@
 
 .skills__grid_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
     grid-template-rows: repeat(2, 320px);
     gap: 12px;
+}
 
-    & .skills__grid_item {
-        border: 2px solid var(--p-100);
-        border-radius: 24px;
-        background-color: var(--p-20);
-        padding: 2rem 2rem;
-        box-shadow: 0px 2px 4px hsla(233, 45%, 20%, 0.1);
+.skills__grid_item_header {
+    & div {
+        display: flex;
+        gap: 12px;
     }
 
-    & .skills__grid_item:nth-child(1) {
+    & h2 {
+        font-size: var(--h2-font-size);
+        line-height: var(--h2-line-height);
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    & p {
+        margin-top: 12px;
+        color: var(--n-500);
+        max-width: 60ch;
+    }
+}
+
+.skills__grid_item {
+    border: 2px solid var(--p-100);
+    border-radius: 24px;
+    background-color: var(--p-20);
+    padding: 2rem 2rem;
+    box-shadow: 0px 2px 4px hsla(233, 45%, 20%, 0.1);
+
+    &:nth-child(1) {
         grid-column: 1 / 2;
         grid-row: 1;
         border: none;
@@ -37,7 +57,7 @@
         background-size: cover;
     }
 
-    & .skills__grid_item:nth-child(2) {
+    &:nth-child(2) {
         grid-column: 2 / 4;
         grid-row: 1;
         display: flex;
@@ -103,7 +123,7 @@
         }
     }
 
-    & .skills__grid_item:nth-child(3) {
+    &:nth-child(3) {
         grid-column: 1/3;
         grid-row: 2;
         display: flex;
@@ -208,7 +228,7 @@
         }
     }
 
-    & .skills__grid_item:nth-child(4) {
+    &:nth-child(4) {
         grid-column: 3/4;
         grid-row: 2;
         border: none;
@@ -220,23 +240,5 @@
         &:hover {
             background-image: url('../../assets/cat2.jpeg');
         }
-    }
-}
-
-.skills__grid_item_header p {
-    margin-top: 12px;
-    color: var(--n-500);
-    max-width: 60ch;
-}
-
-.skills__grid_item_header>div {
-    display: flex;
-    gap: 12px;
-
-    & h2 {
-        font-size: var(--h2-font-size);
-        line-height: var(--h2-line-height);
-        font-weight: 600;
-        text-transform: capitalize;
     }
 }

@@ -30,13 +30,13 @@ body {
 	background-image: repeating-linear-gradient(45deg, hsla(var(--p-500-code), 0.1) 0, hsla(var(--p-700-code, 0.1), 10%) 0.7000000000000001px, var(--foreground-color) 0, var(--foreground-color) 50%);
 }
 
-a {
-	text-decoration: none;
-}
-
 section {
 	margin-top: 120px;
 	margin-bottom: 120px;
+}
+
+a {
+	text-decoration: none;
 }
 
 .container {
@@ -62,6 +62,7 @@ section {
 
 .section__description {
 	text-align: center;
-	max-width: 672px;
+	/* max-width: 672px; */
+	max-width: 65ch;
 	color: var(--n-500);
 }

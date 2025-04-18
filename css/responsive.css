@@ -20,15 +20,14 @@
 /** ===================================
 	Tablet & Small Laptop
 =======================================*/
-
 @media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+
     section {
         margin-top: 80px;
         margin-bottom: 80px;
-    }
-
-    .container {
-        max-width: 1024px;
     }
 
     /**** HEADER ******/
@@ -52,14 +51,11 @@
     }
 
     .header__column--right {
+        text-align: center;
         align-items: center
     }
 
-    /**** ABOUT ME ******/
 
-    .aboutMe__section {
-        margin: 40px auto;
-    }
 
     /**** SKILLS ******/
 
@@ -91,23 +87,13 @@
         max-width: 640px;
     }
 
-
     /**** ABOUT ME ******/
-    .aboutMe__container {
-        padding: 8px;
-        width: 80%;
-    }
-
-    .aboutMe__content_container {
-        background: white;
-    }
-
-    .CTA {
-        flex-direction: column;
+    .aboutMe__section {
+        margin: 80px auto;
     }
 
     .aboutMe__section img {
-        visibility: hidden;
+        display: none;
     }
 
     /**** SKILLS ******/
@@ -153,13 +139,12 @@
 
     .container {
         max-width: 475px;
-        padding: 32px 16px;
+        padding: 0 1rem;
     }
 
     .section__title {
-        /* font-size: 28px; */
         font-size: 2rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
         text-align: center;
     }
 
@@ -167,6 +152,17 @@
 
     .header__badge_container {
         flex-direction: column;
+    }
+
+    /**** ABOUT ME ******/
+    .aboutMe__container {
+        padding: 1rem;
+        width: 90%;
+        border-radius: 2rem;
+    }
+
+    .aboutMe__content_container {
+        border-radius: 2rem;
     }
 
     /**** FOOTER ******/
