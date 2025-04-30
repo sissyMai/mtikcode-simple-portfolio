@@ -1,24 +1,18 @@
-/** =========== 
-	About Me
-=============== */
-
 .aboutMe__section {
-    position: relative;
-    overflow-y: visible;
     margin: 140px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1660px;
+    position: relative;
 
     & img {
         position: absolute;
-
         width: 300px;
         height: auto;
     }
 
-    & img:first-child {
+    & img:nth-child(1) {
         top: -20%;
         left: 1%;
         z-index: -10;
@@ -28,32 +22,26 @@
     & img:nth-child(2) {
         bottom: -20%;
         right: 0;
-        z-index: 1;
         animation: float 7s 1s ease-in-out infinite;
     }
-
 }
 
 .aboutMe__container {
-    background-color: hsla(var(--p-600-code), 0.1);
     width: 70%;
     padding: 3rem;
+    background-color: hsla(var(--p-600-code), 0.1);
     border-radius: 3rem;
 }
 
 .aboutMe__content_container {
-    /* color: white; */
     display: flex;
     flex-direction: column;
     gap: 28px;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    background: white;
-    width: 100%;
-    height: 100%;
-    border-radius: 48px;
-    padding: 3rem 0rem;
+    align-items: center;
+    background-color: white;
+    border-radius: 3rem;
+    padding: 3rem 0;
 
     & h1 {
         color: var(--p-600);
@@ -61,13 +49,13 @@
 
     & p {
         color: var(--n-600);
-        padding: 0px 1rem;
+        padding: 0 1rem;
     }
 }
 
 .CTA {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -104,6 +92,7 @@
     background-color: transparent;
 
     &:hover {
-        box-shadow: 0 4px 8px hsla(var(--p-700-code), 0.1), 0 2px 4px hsla(var(--p-700-code), 0.3);
+        box-shadow: 0 4px 8px hsla(var(--p-900-code), 0.1),
+            0 2px 4px hsla(var(--p-900-code), 0.3);
     }
 }

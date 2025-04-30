@@ -1,10 +1,10 @@
-/** ===================================
-	Media Queries - Responsive Layout 
-=======================================*/
+/* *=====================
+    Media Queries 
+=========================*/
 
-/** ===================================
-	Desktop
-=======================================*/
+/* *=====================
+    Desktop
+=========================*/
 @media (max-width: 1536px) {
     .container {
         max-width: 1440px;
@@ -15,11 +15,22 @@
     .container {
         max-width: 1028px;
     }
+
+    /* *SKILLS* */
+    .softSkills_badge {
+        position: static !important;
+        transform: none !important;
+    }
+
+    .softSkills__book_icons {
+        display: none;
+    }
 }
 
-/** ===================================
-	Tablet & Small Laptop
-=======================================*/
+/* *=====================
+      Tablet & small laptop
+  =========================*/
+
 @media (max-width: 1280px) {
     .container {
         max-width: 1024px;
@@ -30,8 +41,7 @@
         margin-bottom: 80px;
     }
 
-    /**** HEADER ******/
-
+    /** Header **/
     .header__container {
         flex-direction: column;
     }
@@ -43,57 +53,42 @@
 
     .header__content--left {
         align-items: center;
-    }
 
-    .header__content--left p {
-        text-align: center;
-        max-width: 320px;
+        & p {
+            text-align: center;
+            max-width: 320px;
+        }
     }
 
     .header__column--right {
         text-align: center;
-        align-items: center
-    }
-
-
-
-    /**** SKILLS ******/
-    .softSkills__badge {
-        position: relative !important;
-        transform: none !important;
-        left: auto !important;
-        top: auto !important;
-        bottom: auto !important;
-        right: auto !important;
-    }
-
-    .softSkills__book_icons {
-        display: none;
+        align-items: center;
     }
 }
 
-/** ===================================
-	Small Tablet
-=======================================*/
-
+/* *=====================
+     Small Tablet - landscape mode
+  =========================*/
 @media (max-width: 768px) {
     .container {
         max-width: 640px;
     }
 
-    /**** ABOUT ME ******/
+    /** ABOUT ME **/
     .aboutMe__section {
         margin: 80px auto;
+
+        & img {
+            display: none;
+        }
     }
 
-    .aboutMe__section img {
-        display: none;
-    }
-
-    /**** SKILLS ******/
+    /** SKILLS **/
     .skills__grid_container {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
-        grid-auto-rows: minmax(280px, auto);
+        grid-template-rows: repeat(4, minmax(280px, auto));
+        /* grid-template-rows: repeat(2, minmax(280px, auto)); */
+        /* grid-auto-rows: minmax(280px, auto); */
 
         & .skills__grid_item {
             padding: 1rem 1rem;
@@ -103,23 +98,13 @@
     }
 }
 
-/** ===================================
-	Phone
-=======================================*/
-
+/* *=====================
+     Phone
+  =========================*/
 @media (max-width: 640px) {
     :root {
         font-size: 14px;
         line-height: 16px;
-    }
-
-    section {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    header {
-        margin-top: 20px;
     }
 
     .container {
@@ -133,13 +118,17 @@
         text-align: center;
     }
 
-    /**** HEADER ******/
+    /** Header **/
+
+    header {
+        margin-top: 20px;
+    }
 
     .header__badge_container {
         flex-direction: column;
     }
 
-    /**** ABOUT ME ******/
+    /** ABOUT ME **/
     .aboutMe__container {
         padding: 1rem;
         width: 90%;
@@ -148,10 +137,5 @@
 
     .aboutMe__content_container {
         border-radius: 2rem;
-    }
-
-    /**** FOOTER ******/
-    footer {
-        padding: 0;
     }
 }

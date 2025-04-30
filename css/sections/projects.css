@@ -1,17 +1,7 @@
-/** =========== 
-	Projects
-===============*/
-
 .projects_container {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    position: relative;
-
-    & p {
-        max-width: 672px;
-        text-align: center;
-    }
 }
 
 .projects__cards_container {
@@ -22,29 +12,38 @@
     grid-gap: 32px;
     justify-content: center;
     align-content: center;
-
-    & .projects__cards_wrapper {
-        background: hsla(var(--p-700-code), 0.1);
-        padding: 28px;
-        border-start-start-radius: 0.25rem;
-    }
 }
 
 .projects_cards {
-    border-radius: 24px;
     border: 1px solid hsla(var(--p-700-code), 0.1);
+    border-radius: 24px;
     background: var(--foreground-color);
     overflow: clip;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    box-shadow: 1px 4px 6px -1px hsla(var(--p-950-code), 0.1), 1px 2px 4px -2px hsla(var(--p-950-code), 0.1);
+    box-shadow: 1px 4px 6px -1px hsla(var(--p-950-code), 0.1),
+        1px 2px 4px -2px hsla(var(--p-950-code), 0.1);
+    transition: all 0.5s ease;
 
     &:hover {
         box-shadow: 0 15px 40px hsla(var(--p-950-code), 0.2);
         transform: scale(1.05) skew(-1deg, -1deg);
+    }
+}
 
-        & .projects__cards_img {
-            transform: scale(1.05);
-        }
+.projects__cards_wrapper {
+    background: hsla(var(--p-700-code), 0.1);
+    padding: 28px;
+    border-start-start-radius: 0.25rem;
+}
+
+.projects__cards_img {
+    width: 284px;
+    height: 284px;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
     }
 }
 
@@ -67,19 +66,11 @@
         font-weight: 500;
         text-transform: capitalize;
         color: var(--p-950);
-        /* line-clamp */
+        /* line clamp */
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
         line-clamp: 1;
         overflow: hidden;
     }
-}
-
-.projects__cards_img {
-    width: 284px;
-    height: 284px;
-    object-fit: cover;
-    border-radius: 24px;
-    transition: transform 0.4s ease-in-out;
 }

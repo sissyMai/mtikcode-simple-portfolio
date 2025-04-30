@@ -1,14 +1,11 @@
-@import 'theme.css';
-@import 'sections/header.css';
-@import 'sections/about-me.css';
-@import 'sections/skills.css';
-@import 'sections/projects.css';
-@import 'sections/footer.css';
-@import 'animation.css';
+@import "theme.css";
+@import "./sections/header.css";
+@import "./sections/about-me.css";
+@import "./sections/skills.css";
+@import "./sections/projects.css";
+@import "./sections/footer.css";
+@import "./animations.css";
 
-/** ============ 
-	GENERAL
-===============*/
 * {
 	box-sizing: border-box;
 }
@@ -24,10 +21,18 @@
 }
 
 body {
-	/** background pattern  */
+	/* background pattern */
 	background-color: var(--foreground-color);
 	background-size: 7px 7px;
-	background-image: repeating-linear-gradient(45deg, hsla(var(--p-500-code), 0.1) 0, hsla(var(--p-700-code, 0.1), 10%) 0.7000000000000001px, var(--foreground-color) 0, var(--foreground-color) 50%);
+	background-image: repeating-linear-gradient(45deg,
+			hsla(var(--p-500-code), 0.1) 0,
+			hsla(var(--p-700-code), 0.1) 0.7000000000000001px,
+			var(--foreground-color) 0,
+			var(--foreground-color) 50%);
+}
+
+a {
+	text-decoration: none;
 }
 
 section {
@@ -35,14 +40,10 @@ section {
 	margin-bottom: 120px;
 }
 
-a {
-	text-decoration: none;
-}
-
 .container {
 	margin: 0 auto;
-	padding: 0 2rem;
 	max-width: 1536px;
+	padding: 0 2rem;
 }
 
 .section__header {
@@ -62,7 +63,6 @@ a {
 
 .section__description {
 	text-align: center;
-	/* max-width: 672px; */
 	max-width: 65ch;
 	color: var(--n-500);
 }

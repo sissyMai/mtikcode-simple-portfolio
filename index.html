@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <title>Mtikcode simple portfolio</title>
+    <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1"
+      content="width=device-width, initial-scale=1.0"
     />
+    <title>Mtikcode Simple Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="css/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css/responsive.css"
+    />
+
     <link
       rel="icon"
       href="./assets/rocket-icon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/main.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/responsive.css"
     />
 
     <link
@@ -41,16 +37,15 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <!-----------
-      Header 
-    --------------->
+    <!--------------- 
+      Header
+    ----------------->
     <header>
       <div class="container header__container">
         <!-- left column -->
         <div class="header__column--left">
-          <!-- use img as background so that we can do shadow -->
+          <!-- avatar -->
           <div class="header__img"></div>
 
           <div class="header__content--left">
@@ -60,9 +55,8 @@
               <div class="badge">Fullstack developer</div>
             </div>
             <p>
-              Mong muốn ứng tuyển vị trí
-              <span>Junior Developer</span> trong lĩnh vực phát triển web và mobile
-              apps.
+              Mong muốn ứng tuyển vị trí <span>Junior Developer</span> trong lĩnh vực
+              phát triển web và mobile apps.
             </p>
           </div>
         </div>
@@ -76,32 +70,38 @@
           </p>
           <p>
             Gọi cho mình tại:
-            <span>0897123434</span>
+            <span>0891234567</span>
           </p>
         </div>
       </div>
     </header>
 
-    <!--------------
-      About Me
-    ------------------>
+    <!--------------------------------- 
+      About Me - Giới Thiệu Bản Thân
+    ----------------------------------->
     <section class="aboutMe__section">
+      <!-- Hình động 2 bên -->
       <img
         src="./assets/rocket-icon.svg"
         alt="rocket icon"
       />
+
       <img
         src="./assets/laptop-icon.svg"
         alt="laptop icon"
       />
+
+      <!-- Nội dung chính -->
       <div class="aboutMe__container">
         <div class="aboutMe__content_container">
           <h1 class="section__title">Giới Thiệu Bản Thân</h1>
+
           <p class="section__description">
             Xin chào! Mình là sinh viên năm cuối trường đại học CNTT. Mình có niềm
             đam mê với công việc lập trình và vô cùng yêu thích việc tạo ra các trang
             web và mobile app hiện đại và có tính ứng dụng cao.
           </p>
+
           <div class="CTA">
             <a
               href="./assets/CV_Resume.pdf"
@@ -109,9 +109,8 @@
               rel="noopener noreferrer"
               class="primaryButton"
               download
+              >Tải CV</a
             >
-              Tải CV
-            </a>
 
             <a
               href="#ProjectContainer"
@@ -123,11 +122,12 @@
       </div>
     </section>
 
-    <!--------------
-     Skills 
-    ---------------->
+    <!--------------------------------- 
+      Skills - Kỹ Năng
+    ----------------------------------->
     <section class="skills__section">
       <div class="container skills__container">
+        <!-- header -->
         <div class="section__header">
           <h1 class="section__title">Kỹ năng & Chuyên môn</h1>
 
@@ -138,16 +138,13 @@
           </p>
         </div>
 
-        <!---------
-         Grid Items 
-        ----------->
+        <!-- grid -->
         <div class="skills__grid_container">
-          <div class="skills__grid_item">
-            <!-- Grid Item 1 -->
-          </div>
+          <!-- grid item 1 -->
+          <div class="skills__grid_item"></div>
 
+          <!-- grid item 2 -->
           <div class="skills__grid_item">
-            <!-- Grid Item 2 -->
             <div class="skills__grid_item_header">
               <div>
                 <img
@@ -163,317 +160,339 @@
               </p>
             </div>
 
-            <!----------------
-             ICONS LIST START
-            ------------------>
+            <!-- skill logos -->
             <div>
+              <!-- list 1 -->
               <div class="icons-list-wrapper">
                 <div class="icons-list">
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/C.svg"
-                      alt="C-ICON"
+                      alt="C icon"
                     />
-                    <span><p>C</p></span>
+                    <span>C</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/github.svg"
-                      alt="GITHUB-ICON"
+                      alt="github icon"
                     />
-                    <span><p>GITHUB</p></span>
+                    <span>github</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/css.svg"
-                      alt="CSS-ICON"
+                      alt="CSS icon"
                     />
-                    <span><p>CSS</p></span>
+                    <span>CSS</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/java.svg"
-                      alt="JAVA-ICON"
+                      alt="java icon"
                     />
-                    <span><p>JAVA</p></span>
+                    <span>java</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/html.svg"
-                      alt="HTML-ICON"
+                      alt="html icon"
                     />
-                    <span><p>HTML</p></span>
+                    <span>html</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/node-js.svg"
-                      alt="NODEJS-ICON"
+                      alt="nodejs icon"
                     />
-                    <span><p>NODE JS</p></span>
+                    <span>node js</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/JS.svg"
-                      alt="JS-ICON"
+                      alt="js icon"
                     />
-                    <span><p>JAVASCRIPT</p></span>
+                    <span>js</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/react.svg"
-                      alt="REACT-ICON"
+                      alt="react icon"
                     />
-                    <span><p>REACT JS</p></span>
+                    <span>react</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/postgresql.svg"
-                      alt="POSTGRESQL-ICON"
+                      alt="postgresql icon"
                     />
-                    <span><p>POSTGRESQL</p></span>
+                    <span>postgresql</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/nextjs.svg"
-                      alt="NextJs-ICON"
+                      alt="nextjs icon"
                     />
-                    <span><p>NEXT JS</p></span>
+                    <span>nextjs</span>
                   </div>
                 </div>
+
                 <div class="icons-list">
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/C.svg"
-                      alt="C-ICON"
+                      alt="C icon"
                     />
-                    <span><p>C</p></span>
+                    <span>C</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/github.svg"
-                      alt="GITHUB-ICON"
+                      alt="github icon"
                     />
-                    <span><p>GITHUB</p></span>
+                    <span>github</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/css.svg"
-                      alt="CSS-ICON"
+                      alt="CSS icon"
                     />
-                    <span><p>CSS</p></span>
+                    <span>CSS</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/java.svg"
-                      alt="JAVA-ICON"
+                      alt="java icon"
                     />
-                    <span><p>JAVA</p></span>
+                    <span>java</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/html.svg"
-                      alt="HTML-ICON"
+                      alt="html icon"
                     />
-                    <span><p>HTML</p></span>
+                    <span>html</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/node-js.svg"
-                      alt="NODEJS-ICON"
+                      alt="nodejs icon"
                     />
-                    <span><p>NODE JS</p></span>
+                    <span>node js</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/JS.svg"
-                      alt="JS-ICON"
+                      alt="js icon"
                     />
-                    <span><p>JAVASCRIPT</p></span>
+                    <span>js</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/react.svg"
-                      alt="REACT-ICON"
+                      alt="react icon"
                     />
-                    <span><p>REACT JS</p></span>
+                    <span>react</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/postgresql.svg"
-                      alt="POSTGRESQL-ICON"
+                      alt="postgresql icon"
                     />
-                    <span><p>POSTGRESQL</p></span>
+                    <span>postgresql</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/nextjs.svg"
-                      alt="NextJs-ICON"
+                      alt="nextjs icon"
                     />
-                    <span><p>NEXT JS</p></span>
+                    <span>nextjs</span>
                   </div>
                 </div>
               </div>
 
+              <!-- list 2 -->
               <div class="icons-list-wrapper">
                 <div class="icons-list">
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/C.svg"
-                      alt="C-ICON"
+                      alt="C icon"
                     />
-                    <span><p>C</p></span>
+                    <span>C</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/github.svg"
-                      alt="GITHUB-ICON"
+                      alt="github icon"
                     />
-                    <span><p>GITHUB</p></span>
+                    <span>github</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/css.svg"
-                      alt="CSS-ICON"
+                      alt="CSS icon"
                     />
-                    <span><p>CSS</p></span>
+                    <span>CSS</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/java.svg"
-                      alt="JAVA-ICON"
+                      alt="java icon"
                     />
-                    <span><p>JAVA</p></span>
+                    <span>java</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/html.svg"
-                      alt="HTML-ICON"
+                      alt="html icon"
                     />
-                    <span><p>HTML</p></span>
+                    <span>html</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/node-js.svg"
-                      alt="NODEJS-ICON"
+                      alt="nodejs icon"
                     />
-                    <span><p>NODE JS</p></span>
+                    <span>node js</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/JS.svg"
-                      alt="JS-ICON"
+                      alt="js icon"
                     />
-                    <span><p>JAVASCRIPT</p></span>
+                    <span>js</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/react.svg"
-                      alt="REACT-ICON"
+                      alt="react icon"
                     />
-                    <span><p>REACT JS</p></span>
+                    <span>react</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/postgresql.svg"
-                      alt="POSTGRESQL-ICON"
+                      alt="postgresql icon"
                     />
-                    <span><p>POSTGRESQL</p></span>
+                    <span>postgresql</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/nextjs.svg"
-                      alt="NextJs-ICON"
+                      alt="nextjs icon"
                     />
-                    <span><p>NEXT JS</p></span>
+                    <span>nextjs</span>
                   </div>
                 </div>
+
                 <div class="icons-list">
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/C.svg"
-                      alt="C-ICON"
+                      alt="C icon"
                     />
-                    <span><p>C</p></span>
+                    <span>C</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/github.svg"
-                      alt="GITHUB-ICON"
+                      alt="github icon"
                     />
-                    <span><p>GITHUB</p></span>
+                    <span>github</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/css.svg"
-                      alt="CSS-ICON"
+                      alt="CSS icon"
                     />
-                    <span><p>CSS</p></span>
+                    <span>CSS</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/java.svg"
-                      alt="JAVA-ICON"
+                      alt="java icon"
                     />
-                    <span><p>JAVA</p></span>
+                    <span>java</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/html.svg"
-                      alt="HTML-ICON"
+                      alt="html icon"
                     />
-                    <span><p>HTML</p></span>
+                    <span>html</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/node-js.svg"
-                      alt="NODEJS-ICON"
+                      alt="nodejs icon"
                     />
-                    <span><p>NODE JS</p></span>
+                    <span>node js</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/JS.svg"
-                      alt="JS-ICON"
+                      alt="js icon"
                     />
-                    <span><p>JAVASCRIPT</p></span>
+                    <span>js</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/react.svg"
-                      alt="REACT-ICON"
+                      alt="react icon"
                     />
-                    <span><p>REACT JS</p></span>
+                    <span>react</span>
                   </div>
+
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/postgresql.svg"
-                      alt="POSTGRESQL-ICON"
+                      alt="postgresql icon"
                     />
-                    <span><p>POSTGRESQL</p></span>
+                    <span>postgresql</span>
                   </div>
                   <div class="icon-badges">
                     <img
                       src="./assets/icons/nextjs.svg"
-                      alt="NextJs-ICON"
+                      alt="nextjs icon"
                     />
-                    <span><p>NEXT JS</p></span>
+                    <span>nextjs</span>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!----------------
-             ICONS LIST END
-            ------------------>
           </div>
 
+          <!-- grid item 3 -->
           <div class="skills__grid_item">
-            <!-- Grid Item 3 -->
             <div class="skills__grid_item_header">
               <div>
                 <img
                   src="./assets/check-icon.svg"
-                  alt="check-icon"
+                  alt="check icon"
                 />
                 <h2>Kỹ Năng Mềm</h2>
               </div>
@@ -485,50 +504,54 @@
             </div>
 
             <div class="softSkills__container">
-              <div class="softSkills__badge">
-                <span>Giao tiếp chuyên nghiệp</span>
+              <div class="softSkills_badge">
+                <p>Giao tiếp chuyên nghiệp</p>
               </div>
-              <div class="softSkills__badge">
-                <span>Quản lý thời gian hiệu quả</span>
+
+              <div class="softSkills_badge">
+                <p>Quản lý thời gian hiệu quả</p>
               </div>
-              <div class="softSkills__badge">
-                <span>Đáng tin cậy</span>
+              <div class="softSkills_badge">
+                <p>Đáng tin cậy</p>
               </div>
-              <div class="softSkills__badge">
-                <span>Ham học hỏi</span>
+              <div class="softSkills_badge">
+                <p>Ham học hỏi</p>
               </div>
+
               <div class="softSkills__book_icons">
                 <img
                   src="./assets/closed-book.svg"
-                  alt="closed-book-icon"
+                  alt="closed book icon"
                 />
                 <img
                   src="./assets/closed-book.svg"
-                  alt="closed-book-icon"
+                  alt="closed book icon"
                 />
                 <img
                   src="./assets/closed-book.svg"
-                  alt="closed-book-icon"
+                  alt="closed book icon"
                 />
                 <img
                   src="./assets/closed-book.svg"
-                  alt="closed-book-icon"
+                  alt="closed book icon"
                 />
               </div>
             </div>
           </div>
 
-          <div class="skills__grid_item">
-            <!-- Grid Item 4 -->
-          </div>
+          <!-- grid item 4 -->
+          <div class="skills__grid_item"></div>
         </div>
       </div>
     </section>
 
-    <!--------------
-     Projects
-    ---------------->
-    <section class="projects__section">
+    <!--------------------------------- 
+      Projects - Dự Án
+    ----------------------------------->
+    <section
+      class="projects__section"
+      id="ProjectContainer"
+    >
       <div class="container projects_container">
         <!-- header -->
         <div class="section__header">
@@ -543,15 +566,16 @@
         <!-- cards -->
         <div class="projects__cards_container">
           <a
-            href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
                 <img
-                  class="projects__cards_img"
                   src="./assets/project1.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
                 />
               </div>
               <div class="projects__cards_titles">
@@ -562,96 +586,101 @@
           </a>
 
           <a
-            href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
                 <img
-                  class="projects__cards_img"
                   src="./assets/project2.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
                 />
               </div>
               <div class="projects__cards_titles">
                 <h4>dự án 2</h4>
-                <h3>Trang thông tin công nghệ</h3>
+                <h3>trang thông tin công nghệ</h3>
               </div>
             </div>
           </a>
 
           <a
-            href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
                 <img
-                  class="projects__cards_img"
                   src="./assets/project3.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
                 />
               </div>
               <div class="projects__cards_titles">
                 <h4>dự án 3</h4>
-                <h3>Spotify Clone</h3>
+                <h3>spotify clone</h3>
               </div>
             </div>
           </a>
 
           <a
-            href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
                 <img
-                  class="projects__cards_img"
                   src="./assets/project4.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
                 />
               </div>
               <div class="projects__cards_titles">
                 <h4>dự án 4</h4>
-                <h3>Facebook Clone</h3>
+                <h3>facebook clone</h3>
               </div>
             </div>
           </a>
 
           <a
-            href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
                 <img
-                  class="projects__cards_img"
                   src="./assets/project5.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
                 />
               </div>
               <div class="projects__cards_titles">
                 <h4>dự án 5</h4>
-                <h3>Thiết Kế Trang Doanh Nghiệp</h3>
+                <h3>thiết kế trang doanh nghiệp</h3>
               </div>
             </div>
           </a>
 
           <a
-            href="https://github.com/sissyMai/simple-portfolio-with-html-css.git"
+            href="https://github.com/sissyMai/mtikcode-simple-portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div class="projects_cards">
               <div class="projects__cards_wrapper">
                 <img
-                  class="projects__cards_img"
                   src="./assets/project6.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
                 />
               </div>
               <div class="projects__cards_titles">
                 <h4>dự án 6</h4>
-                <h3>Thiết Kế Web</h3>
+                <h3>Thiết kế web</h3>
               </div>
             </div>
           </a>
@@ -659,9 +688,9 @@
       </div>
     </section>
 
-    <!--------------
-     Footer
-    ---------------->
+    <!--------------------------------- 
+      Footer
+    ----------------------------------->
     <footer>
       <div class="container">
         <p>© Mtikcode's Portfolio</p>
