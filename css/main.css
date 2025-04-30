@@ -4,7 +4,7 @@
 @import "./sections/skills.css";
 @import "./sections/projects.css";
 @import "./sections/footer.css";
-@import "./animations.css";
+@import "./animation.css";
 
 * {
 	box-sizing: border-box;
